@@ -11,7 +11,7 @@ permalink: /:categories/:title/
 # 2. 个人名片与底栏
 author:
   name: "Jer Z"
-  avatar: "/assets/images/2寸照.jpg"
+  avatar: "/assets/images/avatar.jpg"
   bio: "建筑设计师。倾向于将建筑视为战略性与思辨性的工具，围绕系统性结构、海岸系统与废弃基础设施展开探索。"
   location: "Hangzhou"
   email: "jeremyzhuzs@outlook.com"
