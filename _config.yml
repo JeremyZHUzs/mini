@@ -11,7 +11,7 @@ permalink: /:categories/:title/
 # 2. 个人名片与底栏
 author:
   name: "Jer Z"
-  avatar: 
+  avatar: ""
   bio: "建筑设计师。倾向于将建筑视为战略性与思辨性的工具，围绕系统性结构、海岸系统与废弃基础设施展开探索。"
   location: "Hangzhou"
   email: "jeremyzhuzs@outlook.com"
@@ -30,7 +30,7 @@ footer:
       url: "https://github.com/JeremyZHUzs"
   since: "2024"
 
-# 3. 网站承重墙 (维持分页与页面生成的底层插件，切勿修改)
+# 3. 网站承重墙 (维持系统运行的底层配置)
 paginate: 5 
 paginate_path: /page:num/
 
@@ -41,6 +41,83 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
 
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+# 这是导致刚才报错的关键：文件排除名单
+include:
+  - .htaccess
+  - _pages
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - minimal-mistakes-jekyll.gemspec
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - /docs 
+  - /test 
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+sass:
+  sass_dir: _sass
+  style: compressed 
+
 defaults:
   - scope:
       path: ""
@@ -48,5 +125,6 @@ defaults:
     values:
       layout: single
       author_profile: true
+      read_time: true
       share: true
       related: true
