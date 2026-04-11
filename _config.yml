@@ -16,12 +16,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 
 # Site Settings
-locale                   :"zh-CN"
+locale                   : "zh-CN"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Jer Z | Architecture & Research"
+title                    : "Jeremy Zhu | Architecture & Research"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Jer Z"
+name                     : "Jeremy Zhu"
 description              : "关注宏观尺度、基础设施与未来空间形态的建筑设计与研究集。"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
