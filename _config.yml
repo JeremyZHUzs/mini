@@ -24,10 +24,6 @@ author:
       url: "https://github.com/JeremyZHUzs"
 
 footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/JeremyZHUzs"
   since: "2024"
 
 # 3. 网站承重墙 (维持系统运行的底层配置)
@@ -128,3 +124,6 @@ defaults:
       read_time: true
       share: true
       related: true
+
+      atom_feed:
+  hide: true
